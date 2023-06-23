@@ -1,14 +1,32 @@
 {
-    "name": "phyozawtun/shoppingcart",
-    "description": "Laravel Shoppingcart",
+    "name": "phyozawtun/laravelshoppingcart",
+    "description": "Laravel Shopping cart",
     "keywords": ["laravel", "shoppingcart"],
     "license": "MIT",
     "authors": [
         {
             "name": "Rob Gloudemans",
             "email": "info@robgloudemans.nl"
+        },
+        {
+            "name": "Michael V.",
+            "email": "michael@michaelbelgium.me"
+        },
+        {
+            "name": "Sami Mansour",
+            "email": "mindscms@gmail.com"
         }
     ],
+    "require": {
+        "illuminate/support": "^7.0|^8.0|^9.0|^10.0",
+        "illuminate/session": "^7.0|^8.0|^9.0|^10.0",
+        "illuminate/events": "^7.0|^8.0|^9.0|^10.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5|^10.1",
+        "mockery/mockery": "^1.4",
+        "orchestra/testbench": "^7"
+    },
     "autoload": {
         "psr-4": {
             "Gloudemans\\Shoppingcart\\": "src/"
@@ -18,9 +36,6 @@
         "psr-4": {
             "Gloudemans\\Tests\\Shoppingcart\\": "tests/"
         }
-    },
-    "suggest": {
-        "gloudemans/notify": "Simple flash notifications for Laravel"
     },
     "minimum-stability": "stable",
     "extra": {
